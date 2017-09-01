@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README would normally document whatever steps are necessary to get the application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+#### Part 1:
+1. Show Anagram words
 
-* System dependencies
+```
+  Anagram.print_anagram
+```
+2. Show non Anagram words
 
-* Configuration
+```
+  Anagram.print_nonanagram
+```
 
-* Database creation
+#### Setup Code
+Go to terminal clone the project
+```
+  git clone git@github.com:pulkit21/anagram.git
+```
+Go to the project
 
-* Database initialization
+```
+  gem install bundle
+  bundle install
+```
+Then go to project path
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+  rails server //to run the rails server
+```
