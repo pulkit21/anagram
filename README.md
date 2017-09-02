@@ -25,9 +25,18 @@ Go to the project
 ```
   gem install bundle
   bundle install
+  rake db:migrate
+  rake db:seed
 ```
 Then go to project path
 
 ```
   rails server //to run the rails server
+```
+
+Admin credentials
+```
+  admin login path: http://localhost:3000/admin/login
+  email: admin@example.com
+  password: password
 ```

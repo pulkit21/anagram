@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  subscription:
+    email_present: "already register for today"
+    won_prize: "Congrats you have won the prize!!"

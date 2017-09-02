@@ -1,0 +1,42 @@
+<!-- Notification -->
+<% if notice.present? %>
+  <p id="notice" class="alert alert-info">
+    <%= notice %>
+  </p>
+<%end%>
+
+<!-- About Section -->
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="about_our_company" style="margin-bottom: 20px;">
+        <h1>About Us</h1>
+        <div class="titleline-icon"></div>
+          <p>Megastore is a storage system developed to meet the requirements of today's interactive online services. Megastore blends the scalability of a NoSQL datastore with the convenience of a traditional RDBMS in a novel way, and provides both strong consistency guarantees and high availability. We provide fully serializable ACID semantics within fine-grained partitions of data. This partitioning allows us to synchronously replicate each write across a wide area network with reasonable latency and support seamless failover between datacenters. This paper describes Megastore's semantics and replication algorithm. It also describes our experience supporting a wide range of Google production services built with Megastore. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <%= form_with(model: subscription, local: true, class: "") do |form| %>
+      <div class="form-group">
+        <%= form.text_field :email, id: :subscription_email, class: "form-control", type: "email", placeholder: "Enter email", "aria-describedby": "emailHelp" %>
+      <% if subscription.errors.any? %>
+        <div id="error_explanation">
+          <% subscription.errors.full_messages.each do |message| %>
+            <small id="emailHelp" class="form-text text-danger"><%= message %></small>
+          <% end %>
+        </div>
+      <% end %>
+      </div>
+      <div class="form-group">
+        <div class="actions">
+          <%= form.submit "Subscribe", class: "btn btn-primary" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+
