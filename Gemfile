@@ -41,6 +41,7 @@ gem 'popper_js'
 # Admin Panel
 gem 'activeadmin'
 gem 'devise'
+gem 'activeadmin_addons'
 
 
 group :development, :test do
